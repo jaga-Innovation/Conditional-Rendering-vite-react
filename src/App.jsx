@@ -258,42 +258,42 @@
 
 
 // Null rendering - example 2
-// import React, { useState } from 'react';
-// import Greeting from './Greeting';
+import React, { useState } from 'react';
+import Greeting from './Greeting';
 
-// function App() {
-//   const [userStatus, setUserStatus] = useState('guest'); // possible values: 'guest', 'user', 'admin'
-//   const [showGreeting, setShowGreeting] = useState(true); // Flag to show/hide Greeting
+function App() {
+  const [userStatus, setUserStatus] = useState('guest'); // possible values: 'guest', 'user', 'admin'
+  const [showGreeting, setShowGreeting] = useState(true); // Flag to show/hide Greeting
 
-//   const toggleStatus = () => {
-//     if (userStatus === 'guest') {
-//       setUserStatus('user');
-//     } else if (userStatus === 'user') {
-//       setUserStatus('admin');
-//     } else {
-//       setUserStatus('guest');
-//     }
-//   };
+  const toggleStatus = () => {
+    if (userStatus === 'guest') {
+      setUserStatus('user');
+    } else if (userStatus === 'user') {
+      setUserStatus('admin');
+    } else {
+      setUserStatus('guest');
+    }
+  };
 
-//   const toggleGreeting = () => {
-//     setShowGreeting(!showGreeting);
-//   };
+  const toggleGreeting = () => {
+    setShowGreeting(!showGreeting);
+  };
 
-//   // Conditionally render nothing if showGreeting is false
-//   if (!showGreeting) {
-//     return null;
-//   }
+  // Conditionally render nothing if showGreeting is false
+  if (!showGreeting) {
+    return null;
+  }
 
-//   return (
-//     <div>
-//       <h1>Current Status: {userStatus}</h1>
-//       <Greeting isLoggedIn={userStatus === 'user' || userStatus === 'admin'} />
-//       <button onClick={toggleStatus}>Switch Status</button>
-//       <button onClick={toggleGreeting}>
-//         {showGreeting ? 'Hide Greeting' : 'Show Greeting'}
-//       </button>
-//     </div>
-//   );
-// }
+  return (
+    <div>
+      <h1>Current Status: {userStatus}</h1>
+      <Greeting isLoggedIn={userStatus === 'user' || userStatus === 'admin'} />
+      <button onClick={toggleStatus}>Switch Status</button>
+      <button onClick={toggleGreeting}>
+        {showGreeting ? 'Hide Greeting' : 'Show Greeting'}
+      </button>
+    </div>
+  );
+}
 
-// export default App;
+export default App;
