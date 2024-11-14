@@ -100,7 +100,7 @@
 
 
 
-
+// Switch Statements
 // import React, { useState } from "react";
 // import Greeting from "./Greeting";
 
@@ -156,7 +156,7 @@
 
 
 
-
+// Rendering Multiple Elements Conditionally
 // import React, { useState } from 'react';
 // import Greeting from './Greeting';
 
@@ -228,7 +228,7 @@
 
 
 
-// Null rendering
+// Null rendering - example 1
 // import React, { useState } from 'react';
 
 // function App() {
@@ -256,6 +256,8 @@
 
 
 
+
+// Null rendering - example 2
 // import React, { useState } from 'react';
 // import Greeting from './Greeting';
 
@@ -295,8 +297,3 @@
 // }
 
 // export default App;
-
-
-
-
-
